@@ -5,6 +5,7 @@ export const profile = {
   headline: 'I design the platforms ambitious teams build on.',
   intro: "I'm Navneet Sharma, a Cloud & AI Platform Architect with 12+ years of experience turning complex infrastructure, delivery and platform challenges into secure, scalable systems.",
   about: "For more than a decade, I've worked across cloud infrastructure, DevOps and platform engineering. Today I'm extending that foundation into AI infrastructure and MLOps — helping teams move from fragmented tooling toward reliable platforms and production-ready systems.",
+  email: 'contact@buildwithnavneet.com',
   blogUrl: 'https://buildwithnavneet.com',
   resumeUrl: '/resume/navneet-sharma-resume.pdf',
 };
