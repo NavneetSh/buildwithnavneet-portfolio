@@ -1,0 +1,7 @@
+---
+import { profile } from '../data/portfolio';
+const emailHref = `mailto:${profile.email}?subject=Let%27s%20work%20together`;
+---
+<!-- Site footer and persistent back-to-top control. -->
+<footer class="shell"><span>© {new Date().getFullYear()} {profile.name}</span><div><a href={emailHref}>{profile.email}</a><a href={profile.blogUrl}>Blog</a><a href={profile.portfolioUrl}>Portfolio</a></div></footer>
+<a class="back-top" href="#top" aria-label="Back to top">↑<span>TOP</span></a>
