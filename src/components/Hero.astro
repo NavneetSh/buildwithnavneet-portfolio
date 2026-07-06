@@ -1,0 +1,9 @@
+---
+import { profile, proofPoints } from '../data/portfolio';
+const emailHref = `mailto:${profile.email}?subject=Let%27s%20work%20together`;
+---
+<!-- Primary introduction, calls to action, proof points, and profile visual. -->
+<section class="hero shell">
+  <div><p class="eyebrow">{profile.eyebrow}</p><h1>{profile.headline}</h1><p class="lead">{profile.intro}</p><div class="actions"><a class="primary" href={emailHref}>Email me ↗</a><a class="secondary" href="#work">Explore my work →</a></div><div class="proof">{proofPoints.map(item => <span><b>{item.value}</b>{item.label}</span>)}</div></div>
+  <div class="visual"><div class="orbit one"></div><div class="orbit two"></div><div class="portrait-wrap"><img src="/images/navneet-profile.jpg" alt="Navneet Sharma, Cloud and AI Platform Architect" /></div><div class="float-card c1"><small>ARCHITECTURE</small><b>Systems that scale</b></div><div class="float-card c2"><small>DIRECTION</small><b>Cloud → AI platforms</b></div></div>
+</section>
