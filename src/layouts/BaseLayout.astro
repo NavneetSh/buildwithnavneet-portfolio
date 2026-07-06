@@ -1,0 +1,21 @@
+---
+import '../styles/global.css';
+import { profile } from '../data/portfolio';
+
+interface Props { title?: string; description?: string; }
+const { title = `${profile.name} | ${profile.role}`, description = `${profile.name} — ${profile.role}. Cloud, platform engineering and AI infrastructure.` } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Core document metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+
+    <!-- Brand favicon. Keep this explicit so browsers do not guess the icon path. -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body id="top"><slot /></body>
+</html>
