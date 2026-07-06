@@ -1,0 +1,12 @@
+---
+import { profile } from '../data/portfolio';
+---
+<!-- Sticky site navigation. External links come from the central portfolio data file. -->
+<header>
+  <nav class="shell">
+    <a class="brand" href="#top"><span>N</span><b>{profile.name}</b></a>
+    <div class="navlinks">
+      <a href="#services">Work together</a><a href="#work">Work</a><a href="#credentials">Credentials</a><a href="#resume">Profile</a><a href="#contact">Contact</a><a href={profile.blogUrl}>Blog ↗</a>
+    </div>
+  </nav>
+</header>
